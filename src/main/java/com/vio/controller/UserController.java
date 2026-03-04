@@ -106,4 +106,16 @@ public class UserController {
         return "新旧密码不能重复";
     }
 
+    //只修改用户名称
+    @PatchMapping("/updateUsername/{id}")
+    public String updateUsername(@PathVariable Integer id,@Validated @RequestParam String username) {
+        User user = userService.findById(id);
+        if (user == null) {
+            return "用户不存在";
+        }else {
+            userService.updateUsername(username);
+            return "名称修改成功";
+        }
+    }
+
 }
