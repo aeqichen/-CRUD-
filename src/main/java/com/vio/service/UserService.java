@@ -22,4 +22,6 @@ public interface UserService{
     void updatePassword(Integer id,String password);
 
     List getAllUser();
+
+    void updateUsername(Integer id,String username);
 }
