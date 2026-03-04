@@ -35,4 +35,7 @@ public interface UserMapper {
 
     @Update("update user set username = #{username} where id = #{id}")
     void updateUsername(Integer id,String username);
+
+    @Update("update user set email = #{email} where id = #{id}")
+    void updateEmail(Integer id, String email);
 }

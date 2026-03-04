@@ -118,4 +118,16 @@ public class UserController {
         }
     }
 
+    //只更新用户邮箱
+    @PatchMapping("/updateEmail/{id}")
+    public String updateEmail(@PathVariable Integer id,@Validated @RequestParam String email) {
+        User user = userService.findById(id);
+        if (user == null) {
+            return "用户不存在";
+        }
+        else {
+            userService.updateEmail(id,email);
+            return "修改成功";
+        }
+    }
 }

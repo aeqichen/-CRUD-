@@ -24,4 +24,6 @@ public interface UserService{
     List getAllUser();
 
     void updateUsername(Integer id,String username);
+
+    void updateEmail(Integer id, String email);
 }

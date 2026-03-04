@@ -58,4 +58,9 @@ public class UserServiceIml implements UserService{
     public void updateUsername(Integer id,String username) {
         userMapper.updateUsername(id,username);
     }
+
+    @Override
+    public void updateEmail(Integer id, String email) {
+        userMapper.updateEmail(id,email);
+    }
 }
