@@ -32,4 +32,7 @@ public interface UserMapper {
 
     @Select("select * from user")
     List<User> getAllUser();
+
+    @Update("update user set username = #{username} where id = #{id}")
+    void updateUsername(Integer id,String username);
 }
