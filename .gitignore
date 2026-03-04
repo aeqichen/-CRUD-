@@ -1,0 +1,26 @@
+# 编译输出
+target/
+bin/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE文件
+.idea/
+*.iml
+*.iws
+.classpath
+.project
+.settings/
+*.launch
+
+# 构建工具
+.gradle/
+build/
+gradle-app.setting
+
+# 系统文件
+.DS_Store
+Thumbs.db

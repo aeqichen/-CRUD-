@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/student?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: rootroot
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+mybatis:
+  configuration:
+    # 开启驼峰命名映射
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.vio.pojo
+
+#logging:
+#  level:
+#    com.vio: DEBUG
+#    org.springframework: DEBUG
+#    org.mybatis: DEBUG
+#    com.baomidou: DEBUG
