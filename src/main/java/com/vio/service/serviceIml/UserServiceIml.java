@@ -53,4 +53,9 @@ public class UserServiceIml implements UserService{
     public List<User> getAllUser() {
         return userMapper.getAllUser();
     }
+
+    @Override
+    public void updateUsername(Integer id,String username) {
+        userMapper.updateUsername(id,username);
+    }
 }
