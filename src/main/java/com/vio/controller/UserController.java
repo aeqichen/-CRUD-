@@ -113,7 +113,7 @@ public class UserController {
         if (user == null) {
             return "用户不存在";
         }else {
-            userService.updateUsername(username);
+            userService.updateUsername(id,username);
             return "名称修改成功";
         }
     }
