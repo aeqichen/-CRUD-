@@ -127,6 +127,7 @@ public class UserController {
         }
         else {
             userService.updateEmail(id,email);
+            return "修改成功";
         }
 
     }
